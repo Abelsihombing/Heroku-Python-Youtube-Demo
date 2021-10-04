@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+
+{% block konten%}
+
+<H1>Data Mahasiswa</H1>
+<p>lorem ipsum dolor sit amet consectetur adipisicing elit. Esse quisquam velit</p>
+
+<h2>Data Mahasiswa 2020</h2>
+{% for data in data_mahasiswa %}
+<ul>
+    <li>Nama   : {{data.name}}</li>
+    <li>Kelas  : {{data.kelas}}</li>
+    <li>Alamat : {{data.alamat}}</li>
+</ul> 
+
+{% endfor %}
+
+{% endblock%}
+
+
+
+
+
